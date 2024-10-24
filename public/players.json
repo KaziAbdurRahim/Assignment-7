@@ -1,0 +1,102 @@
+[
+    {
+      "playerId": 1,
+      "name": "John Smith",
+      "country": "Australia",
+      "image": "https://unsplash.com/photos/5fNmWej4tAA",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 1200000
+    },
+    {
+      "playerId": 2,
+      "name": "Rajesh Kumar",
+      "country": "India",
+      "image": "https://unsplash.com/photos/q-CwpgwZ1Xg",
+      "role": "All-rounder",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm orthodox",
+      "biddingPrice": 1500000
+    },
+    {
+      "playerId": 3,
+      "name": "David Thompson",
+      "country": "England",
+      "image": "https://unsplash.com/photos/cFLewisLkUo",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1000000
+    },
+    {
+      "playerId": 4,
+      "name": "Mohammad Ali",
+      "country": "Pakistan",
+      "image": "https://unsplash.com/photos/XkKCui44iM0",
+      "role": "Wicketkeeper",
+      "battingType": "Right-hand bat",
+      "bowlingType": "None",
+      "biddingPrice": 1100000
+    },
+    {
+      "playerId": 5,
+      "name": "Chris Williams",
+      "country": "South Africa",
+      "image": "https://unsplash.com/photos/pDGNBK9A0sk",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1250000
+    },
+    {
+      "playerId": 6,
+      "name": "Suresh Reddy",
+      "country": "India",
+      "image": "https://unsplash.com/photos/NYvRtnR36XM",
+      "role": "Bowler",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 950000
+    },
+    {
+      "playerId": 7,
+      "name": "James Anderson",
+      "country": "England",
+      "image": "https://unsplash.com/photos/keAzl-kO70E",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1300000
+    },
+    {
+      "playerId": 8,
+      "name": "Marcus Silva",
+      "country": "West Indies",
+      "image": "https://unsplash.com/photos/kX1BBmXX9Rc",
+      "role": "All-rounder",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm off break",
+      "biddingPrice": 1400000
+    },
+    {
+      "playerId": 9,
+      "name": "Kyle Zhang",
+      "country": "New Zealand",
+      "image": "https://unsplash.com/photos/9HI8UJMSdZA",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 1150000
+    },
+    {
+      "playerId": 10,
+      "name": "Ahmed Farooq",
+      "country": "Bangladesh",
+      "image": "https://unsplash.com/photos/IBa_mmgWqRU",
+      "role": "Wicketkeeper",
+      "battingType": "Left-hand bat",
+      "bowlingType": "None",
+      "biddingPrice": 900000
+    }
+  ]

@@ -12,6 +12,7 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('./src/assets/bg-shadow.png')",
         'footer-texture': "url('/img/footer-texture.png')",
+        'bgBB':"url('./src/assets/bg-shadow.png')",
       }
     },
   },
