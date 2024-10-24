@@ -1,8 +1,9 @@
-
+import logo from '../../assets/logo-footer.png'
 
 const Footer = () => {
     return (
         <footer className=" bg-slate-900  text-white p-10 ">
+            <img src={logo} alt="" className='mx-auto my-4' />
             <div className="footer md:flex md:justify-between">
             <nav>
                 <h6 className="footer-title">About Us</h6>
@@ -35,7 +36,7 @@ const Footer = () => {
             
             <div className="my-3">
             <hr className=" text-white"/>
-            <p className="text-center">@2024 Cricket All Right Reserved</p>
+            <p className="text-center mt-1">@2024 Cricket All Right Reserved</p>
             </div>
         </footer>
 
