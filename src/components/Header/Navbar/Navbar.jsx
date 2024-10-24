@@ -1,3 +1,6 @@
+import logo from '../../../assets/logo.png'
+
+
 const Navbar = () => {
     return (
         <div>
@@ -25,11 +28,13 @@ const Navbar = () => {
                             <li><a>Schedules</a></li>
                         </ul>
                     </div>
-                    {/* <a className="btn btn-ghost text-xl"></a> */}
-                    <img src="../../../assets/logo.png" alt="" />
+                    <a className="btn btn-ghost "><img src={logo} alt="" className='w-12' /></a>
+                    
                     
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                
+                <div className="navbar-end">
+                <div className=" hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                             <li><a>Fixture</a></li>
@@ -37,8 +42,10 @@ const Navbar = () => {
                             <li><a>Schedules</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <div>
+                        {/* <img src={} alt="" /> */}
+                        <p>coin</p>
+                    </div>
                 </div>
             </div>
         </div>
