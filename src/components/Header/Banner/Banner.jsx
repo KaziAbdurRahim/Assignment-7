@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types'
 import banner_img from '../../../assets/banner-main.png'
 import bgImage from '../../../assets/bg-shadow.png'
 
-const Banner = () => {
+const Banner = ({avBalance}) => {
     return ( 
         <div className='bg-black container mx-auto rounded-2xl'>
             <div className="hero hero-pattern rounded-2xl" style={{ backgroundImage: `url(${ bgImage})`, backgroundSize: 'cover',  }}>
@@ -14,7 +15,7 @@ const Banner = () => {
                         <p className="py-6 text-base-300">
                             Beyond Boundaries Beyond Limits
                         </p>
-                        <button className="btn btn-primary bg-gradient-to-r from-red-500 to-yellow-600">Claim Free Credit</button>
+                        <button className="btn btn-primary bg-gradient-to-r from-red-500 to-yellow-600" onClick={()=>avBalance(20000000)}>Claim Free Credit</button>
                     </div>
                 </div>
             </div>
@@ -22,5 +23,8 @@ const Banner = () => {
         </div>
     );
 };
+Banner.propTypes ={
+    avBalance:PropTypes.func
+}
 
 export default Banner;

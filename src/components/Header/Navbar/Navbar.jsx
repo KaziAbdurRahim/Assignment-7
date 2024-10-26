@@ -1,10 +1,10 @@
 import logo from '../../../assets/logo.png'
 
 
-const Navbar = () => {
+const Navbar = ({availableBalance}) => {
     return (
-        <div className=' sticky top-0  z-50   backdrop-blur-lg'>
-            <div className="navbar ">
+        <div className=' sticky top-0  z-50   backdrop-blur-2xl '>
+            <div className="navbar mx-auto container">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
                     <div>
                         {/* <img src={} alt="" /> */}
-                        <p>coin</p>
+                        <p>Coin:{availableBalance}</p>
                     </div>
                 </div>
             </div>

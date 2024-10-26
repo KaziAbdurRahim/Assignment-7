@@ -1,6 +1,9 @@
-import PropTypes from 'prop-types'; // ES6
+import PropTypes, { func } from 'prop-types'; // ES6
+import { CgProfile } from "react-icons/cg";
+import { IoIosFlag } from "react-icons/io";
 
-const Player = ({ player }) => {
+
+const Player = ({ player,handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin }) => {
     const { name,country,role,battingType,bowlingType,biddingPrice } = player;
     return (
         <div>
@@ -12,10 +15,10 @@ const Player = ({ player }) => {
                         className="rounded-xl" />
                 </figure>
                 <div className="card-body ">
-                    <h2 className="card-title">{name}</h2>
+                    <h2 className="card-title flex items-center gap-2"><CgProfile />{name}</h2>
                     <div className='flex justify-between '>
                         <div className='flex justify-between items-center'>
-                        <p >{country}</p>
+                        <p className='flex items-center gap-2' > <IoIosFlag />{country}</p>
                         </div>
                         <div><p className='bg-base-200 p-2 rounded-lg
                         '>{role}</p></div>
@@ -33,7 +36,13 @@ const Player = ({ player }) => {
                         <p>{bowlingType}</p>
                         <div className="card-actions  float-right">
                             
-                        <button className="btn btn-primary">choose player</button>
+                        <button onClick={() => { handlenumberofSplayer(1); handleAddsesectedPlayer(player);
+                        handlesetCoin(biddingPrice);
+                         }
+                         } className="btn btn-primary">
+  choose player
+</button>
+
                     </div>
                         </div>
                     </div>
@@ -47,7 +56,11 @@ const Player = ({ player }) => {
 };
 
 Player.propTypes = {
-    player: PropTypes.object.isRequired
+    player: PropTypes.object.isRequired,
+    handleAddsesectedPlayer: PropTypes.func,
+    handlenumberofSplayer: PropTypes.func,
+    handlesetCoin:PropTypes.func,
+    remaincoins:PropTypes.func
 
 }
 
