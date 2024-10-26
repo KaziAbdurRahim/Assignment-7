@@ -3,8 +3,19 @@ import { CgProfile } from "react-icons/cg";
 import { IoIosFlag } from "react-icons/io";
 
 
-const Player = ({ player,handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin }) => {
-    const { name,country,role,battingType,bowlingType,biddingPrice } = player;
+const Player = ({ player,handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin,remaincoins }) => {
+    const { name,country,role,battingType,bowlingType,biddingPrice,playerId } = player;
+
+
+    const disabled = () => {
+        const bus = document.getElementById(playerId);
+        if (bus) {
+            bus.disabled = true;
+            bus.innerText=`Chosen`;
+            alert("the player is going to be chosen");
+          
+        }
+    };
     return (
         <div>
             <div className="card bg-base-100  shadow-xl border ">
@@ -38,8 +49,11 @@ const Player = ({ player,handleAddsesectedPlayer,handlenumberofSplayer,handleset
                             
                         <button onClick={() => { handlenumberofSplayer(1); handleAddsesectedPlayer(player);
                         handlesetCoin(biddingPrice);
+                        remaincoins(biddingPrice);
+                        disabled();
+
                          }
-                         } className="btn btn-primary">
+                         } className="btn btn-primary" id={playerId}>
   choose player
 </button>
 
@@ -60,7 +74,8 @@ Player.propTypes = {
     handleAddsesectedPlayer: PropTypes.func,
     handlenumberofSplayer: PropTypes.func,
     handlesetCoin:PropTypes.func,
-    remaincoins:PropTypes.func
+    remaincoins:PropTypes.func,
+    disabled :PropTypes.func
 
 }
 

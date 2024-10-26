@@ -15,7 +15,7 @@ const Players = ({handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin,re
     },[])
     return (
     
-        <div className="container mx-auto my-2">
+        <div className="container mx-auto my-2" id="Players">
             <div className="md:grid lg:grid-cols-3 md:grid-cols-2 gap-2">
             
             {

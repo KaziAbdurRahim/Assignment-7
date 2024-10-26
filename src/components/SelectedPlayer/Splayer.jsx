@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Splayer = ({seletedSplayer}) => {
-  const {name,battingType}=seletedSplayer;
+const Splayer = ({seletedSplayer,remainingPlayer}) => {
+  const {name,battingType,playerId}=seletedSplayer;
+
+  
     return (
         <div  className="">
             <div className="flex justify-between p-3 my-2 border-2 rounded-md items-center">
@@ -18,7 +20,13 @@ const Splayer = ({seletedSplayer}) => {
                     </div>
                 </div>
                 <div>
-                    <button className="text-red-500"><RiDeleteBin6Line /></button></div>
+                <button
+            onClick={() => remainingPlayer(playerId)}
+            className="text-red-500"
+          >
+            <RiDeleteBin6Line />
+          </button>
+                    </div>
             </div>
            
             
@@ -27,6 +35,7 @@ const Splayer = ({seletedSplayer}) => {
 };
 Splayer.propTypes={
     seletedSplayer: PropTypes.object,
+    remainingPlayer: PropTypes.func.isRequired,
 
 
 
