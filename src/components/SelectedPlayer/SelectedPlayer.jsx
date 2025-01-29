@@ -1,10 +1,11 @@
 import Splayer from "./Splayer";
 import PropTypes from "prop-types";
 
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const SelectedPlayer = ({seletplayer,remainingPlayer, handleVisible}) => {
    
-   console.log(seletplayer);
-   console.log('seletplayer');
+  
     return (
         <div className="hidden" id="SelectedPlayer">
             {
@@ -18,7 +19,7 @@ const SelectedPlayer = ({seletplayer,remainingPlayer, handleVisible}) => {
              
             
             
-            
+             <ToastContainer></ToastContainer>  
             
         </div>
     );

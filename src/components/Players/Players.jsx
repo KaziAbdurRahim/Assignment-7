@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 
 
+
 const Players = ({handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin,remaincoins}) => {
     const [players, setPlayers] = useState([])
     useEffect( () =>{
@@ -23,6 +24,7 @@ const Players = ({handleAddsesectedPlayer,handlenumberofSplayer,handlesetCoin,re
                     handlesetCoin={handlesetCoin}
                     remaincoins={remaincoins}></Player>)
             }
+            
             
         </div>
         </div>

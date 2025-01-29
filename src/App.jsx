@@ -7,9 +7,13 @@ import SelectedPlayer from './components/SelectedPlayer/SelectedPlayer'
 import { useState } from 'react'
 import Sub from './components/Subscribe/Sub'
 
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+  
+
   const [seletplayer, setSelectPlayer] = useState([]);
   const [selectedplyer, setSelectedplayer]=useState(0);
 
@@ -37,7 +41,7 @@ function App() {
     if (ss) {
       ss.disabled =false;
       ss.innerText=`Choose player`;
-      alert("the player is deleting ");
+         
     
   }
 
@@ -53,6 +57,7 @@ function App() {
   const handlesetCoin = (coin)=>{
     setcoins(coin);
     setAvaiablebalance(availableBalance-coin);
+    
     
   }
 
@@ -74,7 +79,7 @@ function App() {
      fk.classList.remove('hidden');
      ba.classList.remove('bg-slate-900');
    bs.classList.add('bg-slate-900');
-    
+  
 
 
 
@@ -120,10 +125,17 @@ function App() {
       <Players handleAddsesectedPlayer={handleAddsesectedPlayer} handlenumberofSplayer={handlenumberofSplayer}
        handlesetCoin={handlesetCoin}
        remaincoins={remaincoins}></Players>
+      <ToastContainer></ToastContainer>
+      
+
       </div>
       <div>
         <SelectedPlayer seletplayer={seletplayer}  remainingPlayer={ remainingPlayer}  handleVisible={ handleVisible}></SelectedPlayer>
+        
+        
+        
       </div>
+     
     </div>
 
     <Sub></Sub>
